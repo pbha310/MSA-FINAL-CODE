@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{6F29D955-C3D7-4471-BDD0-88EFDBA39976}|Default">
+  <MonoDevelop.Ide.ItemProperties.newpro.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.47096af12cbde4e08ffbba954c9d21ec8d91172d" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="newpro/CustomVision.xaml.cs">
+    <Files>
+      <File FileName="newpro/CustomVision.xaml" Line="13" Column="15" />
+      <File FileName="newpro/Model/EvaluationModel.cs" Line="21" Column="2" />
+      <File FileName="newpro/CustomVision.xaml.cs" Line="95" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.newpro.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
