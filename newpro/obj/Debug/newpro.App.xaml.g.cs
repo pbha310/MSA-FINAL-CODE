@@ -11,7 +11,7 @@
 namespace newpro {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/PrinceBhatia/Desktop/newpro/newpro/App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/PrinceBhatia/Documents/MSA/newpro/newpro/App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

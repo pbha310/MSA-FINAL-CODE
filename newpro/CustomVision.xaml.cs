@@ -10,6 +10,11 @@ using Plugin.Media;
 using Plugin.Media.Abstractions;
 using newpro.Model;
 using Xamarin.Forms;
+using Newtonsoft.Json.Linq;
+using Plugin.Geolocator;
+using newpro.Models;
+using System.Globalization;
+using System.Collections.Generic;
 
 namespace newpro
 {
@@ -26,7 +31,7 @@ namespace newpro
 
 			if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
 			{
-				await DisplayAlert("No Camera", ":( No camera available.", "OK");
+				await DisplayAlert("No Camera", "😞 No camera available.", "OK");
 				return;
 			}
 
@@ -47,6 +52,24 @@ namespace newpro
 
 
 			await MakePredictionRequest(file);
+		}
+
+		async Task postLocationAsync()
+		{
+
+			var locator = CrossGeolocator.Current;
+			locator.DesiredAccuracy = 50;
+
+			var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
+
+            newprotable Models = new newprotable()
+			{
+				Longitude = (float)position.Longitude,
+				Latitude = (float)position.Latitude
+
+			};
+
+			await AzureManager.AzureManagerInstance.PostnewproInformation(Models);
 		}
 
 		static byte[] GetImageAsByteArray(MediaFile file)
@@ -83,7 +106,7 @@ namespace newpro
 
 					double max = responseModel.Predictions.Max(m => m.Probability);
 
-					TagLabel.Text = (max >= 0.5) ? "Avendator" : "Not Avendator";
+					TagLabel.Text = (max >= 0.5) ? "avendator" : "Not avendator";
 
 				}
 

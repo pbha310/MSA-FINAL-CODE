@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="newpro.AzureTable">
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="newpro.AzureTable" Title="Car Information" BackgroundColor="Teal">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
     <ContentPage.Content>
-    <Label Text="Azure Tables Navigation Page Tab" VerticalOptions="Center" HorizontalOptions="Center" />
+        <StackLayout>
+            <Button Text="See Car Location" TextColor="White" BackgroundColor="Red" Clicked="Handle_ClickedAsync" />
+            <ListView x:Name="newproList" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding CarLongitude, StringFormat='CarLongitude: {0:N}'}" HorizontalOptions="FillAndExpand" Margin="20,0,0,0" VerticalTextAlignment="Center" />
+                                <Label Text="{Binding CarLatitude, StringFormat='CarLatitude: {0:N}'}" VerticalTextAlignment="Center" Margin="0,0,20,0" />
+                                
+                            </StackLayout>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ActivityIndicator x:Name="loading" IsRunning="false" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-
- 

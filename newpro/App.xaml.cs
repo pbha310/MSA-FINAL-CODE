@@ -8,7 +8,7 @@ namespace newpro
         {
             InitializeComponent();
 
-            MainPage = new newproPage();
+            MainPage = new newpro.newproPage();
         }
 
         protected override void OnStart()

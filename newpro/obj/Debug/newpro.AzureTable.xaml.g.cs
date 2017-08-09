@@ -11,12 +11,20 @@
 namespace newpro {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/PrinceBhatia/Desktop/newpro/newpro/AzureTable.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/PrinceBhatia/Documents/MSA/newpro/newpro/AzureTable.xaml")]
     public partial class AzureTable : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView newproList;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ActivityIndicator loading;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AzureTable));
+            newproList = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.ListView>(this, "newproList");
+            loading = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.ActivityIndicator>(this, "loading");
         }
     }
 }

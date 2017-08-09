@@ -11,7 +11,7 @@
 namespace newpro {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/PrinceBhatia/Desktop/newpro/newpro/CustomVision.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/PrinceBhatia/Documents/MSA/newpro/newpro/CustomVision.xaml")]
     public partial class CustomVision : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -11,7 +11,7 @@
 namespace newpro {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/PrinceBhatia/Desktop/newpro/newpro/newproPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/PrinceBhatia/Documents/MSA/newpro/newpro/newproPage.xaml")]
     public partial class newproPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
